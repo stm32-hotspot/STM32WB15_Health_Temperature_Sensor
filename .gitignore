@@ -1,0 +1,32 @@
+# Ignore everything
+*
+
+# Do not ignore .gitignore file itself
+!.gitignore
+
+# Do not ignore .c, .h and .py files
+!*.c
+!*.h
+!*.py
+# Do not ignore .md, .hex, .png, .html files
+!*.md
+!*.html
+!*.png
+!*.hex
+
+# Do not ignore directories, so .c and .h files inside directories are not ignored
+!*/
+
+# Do not ignore .c and .h files inside directories
+!**/*.c
+!**/*.h
+
+# Allow files from EWARM folder
+!EWARM/*
+
+# Ignore everything inside subfolders of EWARM
+EWARM/*/**
+
+# Allow .c and .h files inside subfolders of EWARM
+!EWARM/**/*.c
+!EWARM/**/*.h
